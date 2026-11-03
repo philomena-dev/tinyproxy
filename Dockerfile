@@ -13,7 +13,7 @@ USER builder
 
 WORKDIR /home/builder
 
-RUN git clone --depth 1 https://github.com/tinyproxy/tinyproxy.git --branch 1.11.2 tinyproxy \
+RUN git clone --depth 1 https://github.com/tinyproxy/tinyproxy.git --branch 1.11.3 tinyproxy \
     && cd /home/builder/tinyproxy \
     && ./autogen.sh \
     && LDFLAGS=-static ./configure \
